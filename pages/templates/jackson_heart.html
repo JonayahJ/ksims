@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}The Jackson Heart Study{% endblock %}
+{% block description %}Official Website for Dr. Kendra D. Sims, PhD{% endblock %}
+
+{% block content %}
+
+    <main> 
+        <!--? Hero area S t a r t-->
+        <div class="slider-area">
+            <div class="slider-height2 slider-bg2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-9">
+                            <div class="hero-caption hero-caption2">
+                                <h2>The Jackson Heart Study</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--  Hero area End -->
+
+        <!--? About Area  01-->
+        <section class="about-area section-bg section-padding">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
+                        <div class="section-tittle mb-40">
+                            <span>The Research</span>
+                            <h4>Recovery from Mobility Limitation in Middle-Aged African Americans</h4>
+                        </div>
+                        <!-- about-img -->
+                        <div class="about-img about-img1  ">
+                            <img src="{% static 'pages/assets/img/gallery/about1.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="offset-xl-1 offset-lg-0 offset-sm-1 col-xxl-5 col-xl-5 col-lg-6 col-md-9 col-sm-11">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle m-0">
+                            <h2 class="mb-40">Takeaways</h2>
+                            <p>Compared to their White counterparts, African Americans have higher rates of mobility difficulty, which impairs functioning in daily life and leads to reduced independence. Most evidence on mobility limitations focuses on risk factors, such as cardiovascular disease, which African Americans are also disproportionately diagnosed with. Loss in functioning is a dynamic process that begins in middle age. Accordingly, we evaluated disability risk among aging adults by evaluating factors associated with recovery.</p>
+                            <div class="about-caption ">
+                                <div class="single-about">
+                                    <p>(1) There was a high rate of incident functional limitation in walking or taking stairs.</p>
+                                </div>
+                                <div class="single-about">
+                                    <p>(2) A high proportion of participants recovered from these limitations within one year.</p>
+                                </div>
+                                <div class="single-about">
+                                    <p>(3) There were no significant associations between body size measures or exercise frequency and recovery.</p>
+                                </div>
+                                <div class="single-about">
+                                    <p>(4) However, low income, experiencing more frequent discrimination in daily life, and having more comorbidities such as cancer or heart failure were associated with a lower likelihood of recovery.</p>
+                                </div>
+                                <a href="#" class="border-btn border-btn2 mt-20">Access Research Paper</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Area E n d -->
+        
+    </main>
+    
+{% endblock content %}

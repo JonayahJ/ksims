@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}The Health and Retirement Study{% endblock %}
+{% block description %}Official Website for Dr. Kendra D. Sims, PhD{% endblock %}
+
+{% block content %}
+
+    <main> 
+        <!--? Hero area S t a r t-->
+        <div class="slider-area">
+            <div class="slider-height2 slider-bg2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-9">
+                            <div class="hero-caption hero-caption2">
+                                <h2>The Health and Retirement Study</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--  Hero area End -->
+
+        <!--? About Area  01-->
+        <section class="about-area section-bg section-padding">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
+                        <div class="section-tittle mb-40">
+                            <span>The Research</span>
+                            <h4>Intersectional Discrimination and Change in Blood Pressure Control among Older Adults</h4>
+                        </div>
+                        <!-- about-img -->
+                        <div class="about-img about-img1  ">
+                            <img src="{% static 'pages/assets/img/gallery/about1.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="offset-xl-1 offset-lg-0 offset-sm-1 col-xxl-5 col-xl-5 col-lg-6 col-md-9 col-sm-11">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle m-0">
+                            <h2 class="mb-40">Takeaways</h2>
+                            <p>This work filled evidential gaps by evaluating whether perceived discrimination is associated with developing hypertension or prevents return to a normotensive state. We also assessed whether the effects are compounded among people reporting intersectional discrimination (e.g., both classism and ageism). Additionally we explored gender differences in blood pressure control attributable to biased treatment.</p>
+                            <div class="about-caption ">
+                                <div class="single-about">
+                                    <p>(1) Experiences of lifetime as well as intersectional everyday discrimination may elevate hypertensive risk among older men.</p>
+                                </div>
+                                <div class="single-about">
+                                    <p>(2) These patterns were not observed among similarly aged women.</p>
+                                </div>
+                                <div class="single-about">
+                                    <p>(3) Discrimination is associated with a lower likelihood of antihypertensive medication   use among both genders.</p>
+                                </div>
+                                <a href="#" class="border-btn border-btn2 mt-20">Access Research Paper</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Area E n d -->
+        
+    </main>
+    
+{% endblock content %}

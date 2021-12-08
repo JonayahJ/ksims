@@ -14,11 +14,11 @@ def contact(request):
 
 ################ RESEARCH PAGES ################
 
-# The TITLE Study
-#def about(request):
-#    return render(request, "about.html", {})
+# The Perceived Discrimination Study
+def perceived_discrimination(request):
+   return render(request, "perceived_discrimination.html", {})
 
-# About
+# The Health and Retirement Study
 def health_retirement(request):
     return render(request, "health_retirement.html", {})
 
