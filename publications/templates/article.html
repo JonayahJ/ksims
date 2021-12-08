@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ article.title }}{% endblock %}
+{% block description %}Official Website for Dr. Kendra D. Sims, PhD{% endblock %}
+
+{% block content %}
+
+<main> 
+    <!--? Hero area S t a r t-->
+    <div class="slider-area">
+       <div class="slider-height2 slider-bg2 d-flex align-items-center">
+          <div class="container">
+             <div class="row">
+                <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-9">
+                   <div class="hero-caption hero-caption2">
+                      <h2>{{ article.title }}</h2> <!-- Article Name -->
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div> 
+    </div>
+    <!--  Hero area End -->
+    <!-- Blog Area Start -->
+    <section class="blog_area single-post-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 posts-list">
+                    <div class="single-post">
+
+                        <!-- Featured Image & Alt Text -->
+                        <div class="feature-img">
+                            <img class="img-fluid" src="{{ article.featuredImage.url }}" alt="{{ article.featDesc }}"> <!-- Featured Image and Alt -->
+                        </div>
+
+                        <!-- Body -->
+                        <div class="blog_details">
+                            <h2 style="color: #2d2d2d;">{{ article.excerpt }} <!-- Excerpt -->
+                            </h2>
+                            <ul class="blog-info-link mt-3 mb-4">
+                                <li><a href="#"><i class="fa fa-user"></i> {{ article.category }}</a></li> <!-- Category -->
+                            </ul>
+                            <p>{{ article.body | safe }}</p> <!-- Body Text -->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-author">
+            <div class="media align-items-center">
+                <img src="{% static 'pages/assets/img/gallery/ksims_thumb.jpg' %}" alt="Dr. Kendra D. Sims, PhD"> <!-- Thumbnail and Alt -->
+                <div class="media-body">
+                    <a href="{% url 'about' %}">
+                        <h4>Dr. Kendra D. Sims, PhD</h4>
+                    </a>
+                    <p>I craft data-driven narratives to improve population health.</p>
+                </div>
+            </div>
+        </div> <!-- Container Div -->
+    </section> <!-- Blog Area End -->
+</main>
+
+{% endblock content %}

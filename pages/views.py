@@ -1,3 +1,4 @@
+# Pages Views
 from django.shortcuts import render
 
 # Index
