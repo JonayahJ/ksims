@@ -8,5 +8,5 @@ urlpatterns = [
     path('contact', views.contact, name="contact"),
     # path('', views.index, name="index"),
     # path('', views.index, name="index"),
-
+    # path('', views.index, name="index"),
 ]

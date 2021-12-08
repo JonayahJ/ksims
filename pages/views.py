@@ -13,6 +13,7 @@ def contact(request):
     return render(request, "contact.html", {})
 
 ################ RESEARCH PAGES ################
+
 # The TITLE Study
 #def about(request):
 #    return render(request, "about.html", {})
