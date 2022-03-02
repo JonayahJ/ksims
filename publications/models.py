@@ -4,10 +4,26 @@ from django.template.defaultfilters import slugify
 from ckeditor.fields import RichTextField
 from django.utils.timezone import now
 
+months = [
+    ("JAN", "1"),
+    ("FEB", "2"),
+    ("MAR", "3"),
+    ("APR", "4"),
+    ("MAY", "5"),
+    ("JUN", "6"),
+    ("JUL", "7"),
+    ("AUG", "8"),
+    ("SEP", "9"),
+    ("OCT", "10"),
+    ("NOV", "11"), 
+    ("DEC", "12")
+]
+
 # Article
 class Article(models.Model):
     title = models.CharField(max_length=255)
     post_date = models.DateField(default=now, editable=True)
+    month = models.CharField(choices=months, max_length=3, default="DEC")
     category = models.CharField(max_length=100, default='research')
     
     featuredImage = models.ImageField(upload_to="photos/publications", null=True, blank=True)

@@ -39,7 +39,12 @@
                             <h2 style="color: #2d2d2d;">{{ article.excerpt }} <!-- Excerpt -->
                             </h2>
                             <ul class="blog-info-link mt-3 mb-4">
-                                <li><a href="#"><i class="fa fa-user"></i> {{ article.category }}</a></li> <!-- Category -->
+                                <li>
+                                    {% comment %} <a href="#"> {% endcomment %}
+                                        <i class="fa fa-user"></i> 
+                                        {{ article.category }}
+                                    {% comment %} </a> {% endcomment %}
+                                </li> <!-- Category -->
                             </ul>
                             <p>{{ article.body | safe }}</p> <!-- Body Text -->
                             

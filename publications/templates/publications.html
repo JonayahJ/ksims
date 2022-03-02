@@ -38,9 +38,9 @@
                                         src="{{ article.featuredImage.url }}" {% comment %} Featured Image URL {% endcomment %}
                                         alt="{{ article.featDesc }}" {% comment %} Featured Image Alt {% endcomment %}
                                     >
-                                    <a href="#" class="blog_item_date">
+                                    <a href="{{ article.get_absolute_url }}" class="blog_item_date">
                                         <h3>{{ article.post_date.day }}</h3>
-                                        <p>{{ article.post_date.month|slice:3 }}</p>
+                                        <p>{{ article.month }}</p>
                                     </a>
                                 </div>
                                 <div class="blog_details">
