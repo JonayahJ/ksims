@@ -33,6 +33,12 @@ class Article(models.Model):
 
     body = RichTextField(blank=True, null=True)
 
+    innerImage = models.ImageField(upload_to="photos/publications", null=True, blank=True)
+    imgDesc = models.CharField(max_length=100, null=True, blank=True, default="Lorem ipsum dolor sit amet")
+
+    body2 = RichTextField(blank=True, null=True)
+
+
     # Adding in the slugs for URLs and SEO
     slug = models.SlugField(null=False, unique=True)
 

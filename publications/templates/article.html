@@ -36,7 +36,8 @@
 
                         <!-- Body -->
                         <div class="blog_details">
-                            <h2 style="color: #2d2d2d;">{{ article.excerpt }} <!-- Excerpt -->
+                            <h2 style="color: #51633D;">
+                                {{ article.excerpt }} <!-- Excerpt -->
                             </h2>
                             <ul class="blog-info-link mt-3 mb-4">
                                 <li>
@@ -47,8 +48,23 @@
                                 </li> <!-- Category -->
                             </ul>
                             <p>{{ article.body | safe }}</p> <!-- Body Text -->
-                            
                         </div>
+
+                        {% if article.innerImage %} 
+                            <!-- Inner Image & Alt Text -->
+                            <figure class="img" style="width: 100%; text-align: center;">
+                                <img src="{{ article.innerImage.url }}" alt="{{ article.imgDesc }}" style="display: inline-block;"> <!-- Inner Image and Alt -->
+                                <figcaption style="font-style: italic; padding: 1rem; text-align: center;">{{ article.imgDesc }}</figcaption>
+                            </figure>
+                        {% endif %}
+
+                        {% if article.body2 %}
+                            <!-- Body -->
+                            <div class="blog_details">
+                                <p>{{ article.body2 | safe }}</p> <!-- Body Text -->
+                            </div>
+                        {% endif %}
+
                     </div>
                 </div>
             </div>

@@ -40,7 +40,7 @@
                                     >
                                     <a href="{{ article.get_absolute_url }}" class="blog_item_date">
                                         <h3>{{ article.post_date.day }}</h3>
-                                        <p>{{ article.month }}</p>
+                                        <p>{{ article.month }} {{ article.post_date.year }}</p>
                                     </a>
                                 </div>
                                 <div class="blog_details">
@@ -54,10 +54,10 @@
                                     </p>
                                     <ul class="blog-info-link">
                                         <li>
-                                            <a href="#">
+                                            {% comment %} <a href="#"> {% endcomment %}
                                                 <i class="fa fa-user"></i> 
                                                 {{ article.category }} <!-- Category -->
-                                            </a>
+                                            {% comment %} </a> {% endcomment %}
                                         </li>
                                     </ul>
                                 </div>
