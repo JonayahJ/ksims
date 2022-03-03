@@ -118,7 +118,7 @@
                                     <h4>Research</h4>
                                     <ul>
                                         <li><a href="{% url 'perceived_discrimination' %}">The Perceived Discrimination Study</a></li>
-                                        <li><a href="{% url 'health_retirement' %}">The Heart and Retirement Study</a></li>
+                                        <li><a href="{% url 'health_retirement' %}">The Health and Retirement Study</a></li>
                                         <li><a href="{% url 'jackson_heart' %}">The Jackson Heart Study</a></li>
                                     </ul>
                                 </div>
@@ -186,11 +186,11 @@
 <script src="{% static 'pages/assets/js/waypoints.min.js' %}"></script>
 
 <!-- contact js -->
-<script src="{% static 'pages/assets/js/contact.js' %}"></script>
+{% comment %} <script src="{% static 'pages/assets/js/contact.js' %}"></script>
 <script src="{% static 'pages/assets/js/jquery.form.js' %}"></script>
 <script src="{% static 'pages/assets/js/jquery.validate.min.js' %}"></script>
 <script src="{% static 'pages/assets/js/mail-script.js' %}"></script>
-<script src="{% static 'pages/assets/js/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'pages/assets/js/jquery.ajaxchimp.min.js' %}"></script> {% endcomment %}
 
 <!--  Plugins, main-Jquery -->	
 <script src="{% static 'pages/assets/js/plugins.js' %}"></script>

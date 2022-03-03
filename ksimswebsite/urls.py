@@ -9,6 +9,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('pages.urls')), # main website links
     path('publications/', include('publications.urls')), # publication list, article view, etc.
+    path('contact/', include('contact.urls')), # contact form links and thank you page
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # allows us to grab images uploaded from admin side
 

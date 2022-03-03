@@ -42,8 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pages.apps.PagesConfig', # website pages
-    'publications.apps.PublicationsConfig', # KSims publications (articles model)
+    'pages.apps.PagesConfig', # pages app
+    'publications.apps.PublicationsConfig', # publications app (articles model)
+    'contact.apps.ContactConfig', # contact app
     'ckeditor',
 ]
 
@@ -142,3 +143,19 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Email SMTP
+## Production
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+EMAIL_USE_TLS = True
+
+## Development
+# EMAIL_HOST = 'localhost'
+# EMAIL_PORT = 1025
+# EMAIL_HOST_USER = ''
+# EMAIL_HOST_PASSWORD = ''
+# EMAIL_USE_TLS = False
