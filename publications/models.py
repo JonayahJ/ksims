@@ -29,7 +29,7 @@ class Article(models.Model):
     featuredImage = models.ImageField(upload_to="photos/publications", null=True, blank=True)
     featDesc = models.CharField(max_length=100, null=True, blank=True, default="Lorem ipsum dolor sit amet")
 
-    excerpt = models.CharField(max_length=200, default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.")
+    excerpt = models.CharField(max_length=400, default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.")
 
     body = RichTextField(blank=True, null=True)
 
