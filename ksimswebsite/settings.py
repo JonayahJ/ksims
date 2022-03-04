@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'publications.apps.PublicationsConfig', # publications app (articles model)
     'contact.apps.ContactConfig', # contact app
     'ckeditor',
+    'django_heroku',
 ]
 
 MIDDLEWARE = [
